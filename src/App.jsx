@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import './App.css';
+import { API_KEY } from '../util/EnvironmentUtil';
 
-const API_KEY = 'b43369b2d7a83f2a3234cd99ca029487';
 
 const getWeatherIcon = (weatherMain, description) => {
   const weather = weatherMain.toLowerCase();
